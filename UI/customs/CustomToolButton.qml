@@ -13,4 +13,12 @@ ToolButton {
         color: "transparent"
     }
 
+    contentItem: Text {
+        leftPadding: -6
+        text: tbtn.text
+        font: tbtn.font
+        verticalAlignment: Text.AlignHCenter
+        horizontalAlignment: Text.AlignLeft
+    }
+
 }
