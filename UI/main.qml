@@ -56,7 +56,23 @@ ApplicationWindow {
                     }
 
                     Cust.CustomToolButton {
-                        text: qsTr("My finances")
+                        text: qsTr("Deposits")
+                    }
+
+                    Cust.CustomToolButton {
+                        text: qsTr("Loans")
+                    }
+
+                    Cust.CustomToolButton {
+                        text: qsTr("Daily contributions")
+                    }
+
+                    Cust.CustomToolButton {
+                        text: qsTr("Clients")
+                    }
+
+                    Cust.CustomToolButton {
+                        text: qsTr("Settings")
                     }
 
                 }
