@@ -32,6 +32,7 @@ ApplicationWindow {
                 margins: 24
                 topMargin: 20
             }
+            spacing: 68
 
             Rectangle {
                 Layout.fillWidth: true
