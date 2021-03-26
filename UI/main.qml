@@ -45,6 +45,17 @@ ApplicationWindow {
 
             }
 
+            ToolBar {
+                ColumnLayout {
+                    anchors.fill: parent
+
+                    ToolButton {
+                        text: qsTr("Dashboard")
+                    }
+
+                }
+            }
+
         }
 
 
