@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import './customs' as Cust
 
 ApplicationWindow {
     visible: true
@@ -49,10 +50,14 @@ ApplicationWindow {
                 ColumnLayout {
                     anchors.fill: parent
 
-                    ToolButton {
+                    Cust.CustomToolButton {
                         text: qsTr("Dashboard")
                     }
 
+                }
+
+                background: Rectangle {
+                    //
                 }
             }
 
