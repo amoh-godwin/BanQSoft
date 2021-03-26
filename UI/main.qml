@@ -56,26 +56,56 @@ ApplicationWindow {
 
                     Cust.CustomToolButton {
                         text: qsTr("Dashboard")
+
+                        onClicked: {
+                            currsSideNav = this.text
+                        }
+
                     }
 
                     Cust.CustomToolButton {
                         text: qsTr("Deposits")
+
+                        onClicked: {
+                            currsSideNav = this.text
+                        }
+
                     }
 
                     Cust.CustomToolButton {
                         text: qsTr("Loans")
+
+                        onClicked: {
+                            currsSideNav = this.text
+                        }
+
                     }
 
                     Cust.CustomToolButton {
                         text: qsTr("Daily contributions")
+
+                        onClicked: {
+                            currsSideNav = this.text
+                        }
+
                     }
 
                     Cust.CustomToolButton {
                         text: qsTr("Clients")
+
+                        onClicked: {
+                            currsSideNav = this.text
+                        }
+
                     }
 
                     Cust.CustomToolButton {
                         text: qsTr("Settings")
+
+                        onClicked: {
+                            currsSideNav = this.text
+                        }
+
                     }
 
                 }
