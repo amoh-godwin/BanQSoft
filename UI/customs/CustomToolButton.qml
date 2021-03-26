@@ -9,14 +9,14 @@ ToolButton {
 
     background: Rectangle {
         implicitWidth: 128
-        implicitHeight: 28
+        implicitHeight: 36
         color: "transparent"
     }
 
     contentItem: Text {
         leftPadding: -6
         text: tbtn.text
-        font: tbtn.font
+        font.pixelSize: 12
         verticalAlignment: Text.AlignHCenter
         horizontalAlignment: Text.AlignLeft
     }

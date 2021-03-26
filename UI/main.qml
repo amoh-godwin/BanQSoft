@@ -54,6 +54,10 @@ ApplicationWindow {
                         text: qsTr("Dashboard")
                     }
 
+                    Cust.CustomToolButton {
+                        text: qsTr("My finances")
+                    }
+
                 }
 
                 background: Rectangle {
