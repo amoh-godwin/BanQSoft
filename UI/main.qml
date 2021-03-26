@@ -23,6 +23,13 @@ ApplicationWindow {
         interactive: false
         visible: true
 
+        ColumnLayout {
+            anchors.fill: parent
+            anchors.margins: 18
+
+        }
+
+
         background: Rectangle {
             anchors.right: parent.right
             width: 1
