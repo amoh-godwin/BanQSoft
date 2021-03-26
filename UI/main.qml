@@ -24,8 +24,13 @@ ApplicationWindow {
         visible: true
 
         ColumnLayout {
-            anchors.fill: parent
-            anchors.margins: 18
+            anchors {
+                top: parent.top
+                right: parent.right
+                left: parent.left
+                margins: 24
+                topMargin: 20
+            }
 
         }
 
