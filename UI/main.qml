@@ -10,6 +10,7 @@ ApplicationWindow {
     title: "BanQSoft"
 
     property string currsSideNav: "Dashboard"
+    property color accent: "#5F755F"
 
     header: Rectangle {
         width: parent.width
