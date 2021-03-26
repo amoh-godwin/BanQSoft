@@ -1,0 +1,26 @@
+
+Views
+======================
+
+Summary/Dashboard
+Deposites
+Loans
+Repayments
+Daily Contributions
+Client/Customers
+Settings
+
+
+Database Model
+========================
+
+Deposites
+Loans
+Repayments
+Daily Contributions
+Clients/Customers
+
+
+Clients/Customers Table
+==========================
+user_id, name, daily_contributions
