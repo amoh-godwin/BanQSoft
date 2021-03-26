@@ -32,6 +32,19 @@ ApplicationWindow {
                 topMargin: 20
             }
 
+            Rectangle {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 24
+                //color:"dodgerblue"
+
+                Text {
+                    text: "BanQSoft"
+                    color: "pink"
+                    font.pixelSize: 18
+                }
+
+            }
+
         }
 
 
