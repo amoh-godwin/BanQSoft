@@ -9,6 +9,8 @@ ApplicationWindow {
     height: 657
     title: "BanQSoft"
 
+    property string currsSideNav: "Dashboard"
+
     header: Rectangle {
         width: parent.width
         height: 1

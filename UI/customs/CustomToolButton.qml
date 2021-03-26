@@ -19,6 +19,7 @@ ToolButton {
         font.pixelSize: 12
         verticalAlignment: Text.AlignHCenter
         horizontalAlignment: Text.AlignLeft
+        color: currsSideNav == tbtn.text ? "#5F755F" : "lightgrey"
     }
 
 }
