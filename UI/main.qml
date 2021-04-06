@@ -2,6 +2,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 import './customs' as Cust
+import './components' as Comp
 
 ApplicationWindow {
     visible: true
@@ -131,6 +132,14 @@ ApplicationWindow {
         x: sidenavCont.width
         width: parent.width - sidenavCont.width
         height: parent.height
+
+        StackView {
+            anchors.fill: parent
+            initialItem: repayComp
+        }
+
+        Comp.RepaymentsComponent {id: repayComp}
+
 
     }
 
