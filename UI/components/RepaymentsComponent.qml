@@ -12,7 +12,40 @@ Component {
             Layout.fillWidth: true
             Layout.preferredHeight: 52
 
-            Rectangle {
+            Row {
+                anchors {
+                    fill: parent
+                    topMargin: 16
+                    bottomMargin: 12
+                }
+
+
+                Rectangle {
+                    width: parent.width
+                    height: 26
+                    color: "dodgerblue"
+
+                    Row {
+                        anchors {
+                            fill: parent
+                            topMargin: 4
+                        }
+
+                        Text {
+                            text: "Q"
+                        }
+
+                        TextField {
+                            placeholderText: "Search"
+                        }
+
+                    }
+
+                }
+
+            }
+
+            Rectangle {//border
                 anchors.bottom: parent.bottom
                 width: parent.width
                 height: 1
