@@ -19,6 +19,16 @@ ApplicationWindow {
         color: "teal"
     }
 
+    FontLoader {
+        id: segoe_font;
+        source: "file:///H:/GitHub/BanQSoft/UI/fonts/SegMDL2.ttf"
+        onStatusChanged: if (segoe_font.status == FontLoader.Ready) {
+                             console.log('Loaded')
+                         }else {
+                             print('shite')
+                         }
+    }
+
     Drawer {
         id: sidenavCont
         width: parent.width / 5

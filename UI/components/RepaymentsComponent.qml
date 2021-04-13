@@ -24,12 +24,15 @@ Component {
                 Rectangle {
                     width: 400
                     height: 26
-                    color: "dodgerblue"
 
                     RowLayout {
                         anchors.fill: parent
+                        spacing: 0
                         Text {
-                            text: "Q"
+                            text: '\uE721'
+                            font.family: segoe_font.name
+                            font.pixelSize: 16
+                            color: "darkgrey"
                         }
 
                         TextField {
