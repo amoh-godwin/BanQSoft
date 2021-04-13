@@ -15,28 +15,34 @@ Component {
             Row {
                 anchors {
                     fill: parent
+                    margins: 36
                     topMargin: 16
                     bottomMargin: 12
                 }
 
 
                 Rectangle {
-                    width: parent.width
+                    width: 400
                     height: 26
                     color: "dodgerblue"
 
-                    Row {
-                        anchors {
-                            fill: parent
-                            topMargin: 4
-                        }
-
+                    RowLayout {
+                        anchors.fill: parent
                         Text {
                             text: "Q"
                         }
 
                         TextField {
+                            Layout.fillWidth: true
+                            Layout.fillHeight: true
                             placeholderText: "Search"
+
+                            background: Rectangle {
+                                implicitWidth: 128
+                                implicitHeight: 24
+                                color: "lightgrey"
+                            }
+
                         }
 
                     }
