@@ -20,36 +20,9 @@ Component {
                     bottomMargin: 12
                 }
 
-
-                Rectangle {
+                SearchComponent {
                     width: 400
                     height: 26
-
-                    RowLayout {
-                        anchors.fill: parent
-                        spacing: 0
-                        Text {
-                            text: '\uE721'
-                            font.family: segoe_font.name
-                            font.pixelSize: 16
-                            color: "darkgrey"
-                        }
-
-                        TextField {
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            placeholderText: "Search"
-
-                            background: Rectangle {
-                                implicitWidth: 128
-                                implicitHeight: 24
-                                color: "transparent"
-                            }
-
-                        }
-
-                    }
-
                 }
 
             }
