@@ -43,7 +43,7 @@ Component {
                             background: Rectangle {
                                 implicitWidth: 128
                                 implicitHeight: 24
-                                color: "lightgrey"
+                                color: "transparent"
                             }
 
                         }
