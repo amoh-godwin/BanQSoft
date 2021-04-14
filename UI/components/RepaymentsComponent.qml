@@ -52,11 +52,23 @@ Component {
                     Layout.rightMargin: 24
                 }
 
-                Rectangle {
+                Rectangle {//header
                     Layout.fillWidth: true
                     Layout.preferredHeight: 48
                     Layout.rightMargin: 24
                     border.color: "darkgrey"
+
+                    RowLayout {
+                        anchors.fill: parent
+                        anchors.margins: 8
+                        spacing: 16
+
+                        Text {
+                            text: "Surname Othername"
+                        }
+
+                    }
+
                 }
 
                 ScrollView {
@@ -67,7 +79,7 @@ Component {
                     ListView {
                         anchors.fill: parent
                         anchors.rightMargin: 24
-                        model: 24
+                        model: RepaymentsBaseModel {}
                         delegate: ViewDelegate {}
                     }
 
