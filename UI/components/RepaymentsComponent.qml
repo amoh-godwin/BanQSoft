@@ -67,6 +67,22 @@ Component {
                             text: "Surname Othername"
                         }
 
+                        Text {
+                            text: "Amount"
+                        }
+
+                        Text {
+                            text: "Amount"
+                        }
+
+                        Text {
+                            text: "Amount"
+                        }
+
+                        Text {
+                            text: "Last visited"
+                        }
+
                     }
 
                 }
