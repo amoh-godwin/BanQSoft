@@ -39,6 +39,24 @@ Component {
         Rectangle {
             Layout.fillWidth: true
             Layout.fillHeight: true
+
+            ColumnLayout {
+                anchors.fill: parent
+
+                Text {
+                    text: "Repayments"
+                    font.pixelSize: 24
+                }
+
+                Rectangle {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 48
+                    border.color: "darkgrey"
+                }
+
+
+            }
+
         }
 
     }
