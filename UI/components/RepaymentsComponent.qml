@@ -42,25 +42,32 @@ Component {
 
             ColumnLayout {
                 anchors.fill: parent
+                anchors.leftMargin: 24
+                anchors.topMargin: 24
+                spacing: 8
 
                 Text {
                     text: "Repayments"
                     font.pixelSize: 24
+                    Layout.rightMargin: 24
                 }
 
                 Rectangle {
                     Layout.fillWidth: true
                     Layout.preferredHeight: 48
+                    Layout.rightMargin: 24
                     border.color: "darkgrey"
                 }
 
                 ScrollView {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
+                    clip: true
 
                     ListView {
                         anchors.fill: parent
-                        model: 3
+                        anchors.rightMargin: 24
+                        model: 24
                         delegate: ViewDelegate {}
                     }
 
