@@ -2,6 +2,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 import './customs' as Cust
+import './components' as Comp
 
 ApplicationWindow {
     visible: true
@@ -16,6 +17,16 @@ ApplicationWindow {
         width: parent.width
         height: 1
         color: "teal"
+    }
+
+    FontLoader {
+        id: segoe_font;
+        source: "file:///H:/GitHub/BanQSoft/UI/fonts/SegMDL2.ttf"
+        onStatusChanged: if (segoe_font.status == FontLoader.Ready) {
+                             console.log('Loaded')
+                         }else {
+                             print('shite')
+                         }
     }
 
     Drawer {
@@ -131,6 +142,14 @@ ApplicationWindow {
         x: sidenavCont.width
         width: parent.width - sidenavCont.width
         height: parent.height
+
+        StackView {
+            anchors.fill: parent
+            initialItem: repayComp
+        }
+
+        Comp.RepaymentsComponent {id: repayComp}
+
 
     }
 
