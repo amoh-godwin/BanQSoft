@@ -54,6 +54,17 @@ Component {
                     border.color: "darkgrey"
                 }
 
+                ScrollView {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+
+                    ListView {
+                        anchors.fill: parent
+                        model: 3
+                        delegate: ViewDelegate {}
+                    }
+
+                }
 
             }
 
