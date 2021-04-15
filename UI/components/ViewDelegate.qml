@@ -14,7 +14,8 @@ Component {
             spacing: 16
 
             Rectangle {
-                Layout.preferredWidth: 101
+                Layout.preferredWidth: name_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -29,7 +30,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 53
+                Layout.preferredWidth: acc_id_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -44,7 +46,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 31
+                Layout.preferredWidth: inst_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -59,7 +62,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 38
+                Layout.preferredWidth: bal_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -74,7 +78,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 59
+                Layout.preferredWidth: t_inst_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -89,7 +94,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 90
+                Layout.preferredWidth: l_pays_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -104,7 +110,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 68
+                Layout.preferredWidth: due_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true
@@ -119,7 +126,8 @@ Component {
             }
 
             Rectangle {
-                Layout.preferredWidth: 100
+                Layout.preferredWidth: dura_cont.width
+                Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
                 visible: true

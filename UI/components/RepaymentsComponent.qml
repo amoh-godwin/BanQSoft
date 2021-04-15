@@ -73,12 +73,12 @@ Component {
                     }
 
                     RowLayout {
-                        id: lay
                         anchors.fill: parent
                         anchors.margins: 8
                         spacing: 16
 
                         Rectangle {
+                            id: name_cont
                             Layout.preferredWidth: 100
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -97,6 +97,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: acc_id_cont
                             Layout.preferredWidth: 53
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -115,6 +116,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: inst_cont
                             Layout.preferredWidth: 42
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -133,6 +135,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: bal_cont
                             Layout.preferredWidth: 38
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -151,6 +154,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: t_inst_cont
                             Layout.preferredWidth: 60
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -169,6 +173,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: l_pays_cont
                             Layout.preferredWidth: 90
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -187,6 +192,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: due_cont
                             Layout.preferredWidth: 72
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -205,6 +211,7 @@ Component {
                         }
 
                         Rectangle {
+                            id: dura_cont
                             Layout.preferredWidth: 88
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -220,11 +227,6 @@ Component {
                                 renderType: Text.NativeRendering
                                 text: "Payment Duration"
                             }
-                        }
-
-
-                        Component.onCompleted: {
-                            print(lay.width, lay.implicitWidth)
                         }
 
                     }
