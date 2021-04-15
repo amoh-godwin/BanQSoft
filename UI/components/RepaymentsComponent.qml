@@ -68,19 +68,19 @@ Component {
                         }
 
                         Text {
-                            text: "Amount"
+                            text: "Install"
                         }
 
                         Text {
-                            text: "Amount"
+                            text: "Balance"
                         }
 
                         Text {
-                            text: "Amount"
+                            text: "Total Install"
                         }
 
                         Text {
-                            text: "Last visited"
+                            text: "Last payment date"
                         }
 
                     }
