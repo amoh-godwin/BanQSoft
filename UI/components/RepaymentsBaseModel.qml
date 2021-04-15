@@ -2,15 +2,16 @@ import QtQuick 2.10
 
 ListModel {
     ListElement {
-        fullname: "Surname Othername"
-        account_id: "Account ID"
-        installments: "Install"
-        balance: "Balance"
-        total_installments: "Total Install"
-        last_payment_date: "Last payment date"
-        next_due_date: "Next due date"
-        duration_of_payment: "Duration of Payment"
+        fullname: "Joseph O'Kefefe"
+        account_id: "3"
+        installments: "300"
+        balance: "100"
+        total_installments: "200"
+        last_payment_date: "1/1/21"
+        next_due_date: "12/10/21"
+        duration_of_payment: "1 month"
     }
+
 
     ListElement {
         fullname: "Amoh-Gyebi Godwin"
@@ -21,6 +22,17 @@ ListModel {
         last_payment_date: "1/1/21"
         next_due_date: "12/10/21"
         duration_of_payment: "3 months"
+    }
+
+    ListElement {
+        fullname: "Samuel Emmanuel"
+        account_id: "2"
+        installments: "1023"
+        balance: "420"
+        total_installments: "403"
+        last_payment_date: "1/1/21"
+        next_due_date: "12/10/21"
+        duration_of_payment: "5 months"
     }
 
 }
