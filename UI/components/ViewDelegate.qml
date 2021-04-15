@@ -24,7 +24,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Surname Othername"
+                    text: fullname
                 }
             }
 
@@ -39,7 +39,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Account ID"
+                    text: account_id
                 }
             }
 
@@ -54,7 +54,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Install"
+                    text: installments
                 }
             }
 
@@ -69,7 +69,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Balance"
+                    text: balance
                 }
             }
 
@@ -84,7 +84,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Total Install"
+                    text: total_installments
                 }
             }
 
@@ -99,7 +99,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Last payment date"
+                    text: last_payment_date
                 }
             }
 
@@ -114,7 +114,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Next due date"
+                    text: next_due_date
                 }
             }
 
@@ -129,7 +129,7 @@ Component {
                     height: parent.height
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideMiddle
-                    text: "Duration of Payment"
+                    text: duration_of_payment
                 }
             }
 
