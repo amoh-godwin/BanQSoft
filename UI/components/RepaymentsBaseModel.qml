@@ -13,14 +13,14 @@ ListModel {
     }
 
     ListElement {
-        fullname: ""
-        account_id: ""
-        installments: ""
-        balance: ""
-        total_installments: ""
-        last_payment_date: ""
-        next_due_date: ""
-        duration_of_payment: ""
+        fullname: "Amoh-Gyebi Godwin"
+        account_id: "1"
+        installments: "100"
+        balance: "400"
+        total_installments: "400"
+        last_payment_date: "1/1/21"
+        next_due_date: "12/10/21"
+        duration_of_payment: "3 months"
     }
 
 }
