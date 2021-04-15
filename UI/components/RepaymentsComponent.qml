@@ -67,6 +67,7 @@ Component {
                             Layout.preferredWidth: 101
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -82,6 +83,7 @@ Component {
                             Layout.preferredWidth: 53
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -96,6 +98,7 @@ Component {
                             Layout.preferredWidth: 31
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -110,6 +113,7 @@ Component {
                             Layout.preferredWidth: 38
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -124,6 +128,7 @@ Component {
                             Layout.preferredWidth: 59
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -138,6 +143,7 @@ Component {
                             Layout.preferredWidth: 90
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -152,6 +158,7 @@ Component {
                             Layout.preferredWidth: 68
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -166,6 +173,7 @@ Component {
                             Layout.preferredWidth: 100
                             Layout.fillHeight: true
                             color: "transparent"
+                            visible: true
 
                             Text {
                                 width: parent.width
