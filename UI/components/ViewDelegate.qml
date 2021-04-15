@@ -16,6 +16,9 @@ Component {
             Text {
                 text: "Surname Othername"
             }
+            Text {
+                text: "Account ID"
+            }
 
             Text {
                 text: "Install"
@@ -31,6 +34,14 @@ Component {
 
             Text {
                 text: "Last payment date"
+            }
+
+            Text {
+                text: "Next due date"
+            }
+
+            Text {
+                text: "Duration of Payment"
             }
 
         }
