@@ -65,33 +65,85 @@ Component {
 
                         Text {
                             text: "Surname Othername"
-                        }
-                        Text {
-                            text: "Account ID"
+                        Rectangle {
+                            Layout.preferredWidth: 101
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Surname Othername"
+                            }
                         }
 
-                        Text {
-                            text: "Install"
+
+                        Rectangle {
+                            Layout.preferredWidth: 53
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Account ID"
+                            }
                         }
 
-                        Text {
-                            text: "Balance"
+                        Rectangle {
+                            Layout.preferredWidth: 31
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Install"
+                            }
                         }
 
-                        Text {
-                            text: "Total Install"
+                        Rectangle {
+                            Layout.preferredWidth: 38
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Balance"
+                            }
                         }
 
-                        Text {
-                            text: "Last payment date"
+                        Rectangle {
+                            Layout.preferredWidth: 59
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Total Install"
+                            }
                         }
 
-                        Text {
-                            text: "Next due date"
+                        Rectangle {
+                            Layout.preferredWidth: 90
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Last payment date"
+                            }
                         }
 
-                        Text {
-                            text: "Duration of Payment"
+                        Rectangle {
+                            Layout.preferredWidth: 68
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Next due date"
+                            }
+                        }
+
+                        Rectangle {
+                            Layout.preferredWidth: 100
+                            Layout.fillHeight: true
+                            color: "transparent"
+
+                            Text {
+                                text: "Duration of Payment"
+                            }
                         }
 
                     }
