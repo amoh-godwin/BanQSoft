@@ -63,14 +63,16 @@ Component {
                         anchors.margins: 8
                         spacing: 16
 
-                        Text {
-                            text: "Surname Othername"
                         Rectangle {
                             Layout.preferredWidth: 101
                             Layout.fillHeight: true
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Surname Othername"
                             }
                         }
@@ -82,6 +84,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Account ID"
                             }
                         }
@@ -92,6 +98,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Install"
                             }
                         }
@@ -102,6 +112,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Balance"
                             }
                         }
@@ -112,6 +126,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Total Install"
                             }
                         }
@@ -122,6 +140,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Last payment date"
                             }
                         }
@@ -132,6 +154,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Next due date"
                             }
                         }
@@ -142,6 +168,10 @@ Component {
                             color: "transparent"
 
                             Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
                                 text: "Duration of Payment"
                             }
                         }
