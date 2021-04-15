@@ -78,7 +78,6 @@ Component {
                             }
                         }
 
-
                         Rectangle {
                             Layout.preferredWidth: 53
                             Layout.fillHeight: true
