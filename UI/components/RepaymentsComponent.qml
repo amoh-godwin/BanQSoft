@@ -74,6 +74,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Surname Othername"
                             }
                         }
@@ -89,6 +91,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Account ID"
                             }
                         }
@@ -104,6 +108,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Install"
                             }
                         }
@@ -119,6 +125,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Balance"
                             }
                         }
@@ -134,6 +142,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Total Install"
                             }
                         }
@@ -149,6 +159,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Last payment date"
                             }
                         }
@@ -164,6 +176,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Next due date"
                             }
                         }
@@ -179,6 +193,8 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semilight"
+                                renderType: Text.NativeRendering
                                 text: "Duration of Payment"
                             }
                         }
