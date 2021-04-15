@@ -3,16 +3,18 @@ import QtQuick 2.10
 ListModel {
     ListElement {
         fullname: ""
-        amount: ""
-        payed: ""
-        last_date: ""
+        installments: ""
+        balance: ""
+        total_installments: ""
+        last_payment_date: ""
     }
 
     ListElement {
         fullname: ""
-        amount: ""
-        payed: ""
-        last_date: ""
+        installments: ""
+        balance: ""
+        total_installments: ""
+        last_payment_date: ""
     }
 
 }
