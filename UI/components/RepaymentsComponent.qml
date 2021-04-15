@@ -50,21 +50,37 @@ Component {
                     text: "Repayments"
                     font.pixelSize: 24
                     Layout.rightMargin: 24
+                    color: accent
                 }
 
                 Rectangle {//header
                     Layout.fillWidth: true
                     Layout.preferredHeight: 48
                     Layout.rightMargin: 24
-                    border.color: "darkgrey"
+
+                    Rectangle {
+                        anchors.top: parent.top
+                        width: parent.width
+                        height: 1
+                        color: "lightgrey"
+                    }
+
+                    Rectangle {
+                        anchors.bottom: parent.bottom
+                        width: parent.width
+                        height: 1
+                        color: "lightgrey"
+                    }
 
                     RowLayout {
+                        id: lay
                         anchors.fill: parent
                         anchors.margins: 8
                         spacing: 16
 
                         Rectangle {
-                            Layout.preferredWidth: 101
+                            Layout.preferredWidth: 100
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -74,31 +90,33 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
-                                text: "Surname Othername"
+                                text: "Name"
                             }
                         }
 
                         Rectangle {
                             Layout.preferredWidth: 53
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
-                            visible: true
+                            //visible: false
 
                             Text {
                                 width: parent.width
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
                                 text: "Account ID"
                             }
                         }
 
                         Rectangle {
-                            Layout.preferredWidth: 31
+                            Layout.preferredWidth: 42
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -107,15 +125,16 @@ Component {
                                 width: parent.width
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                elide: Text.ElideRight
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
-                                text: "Install"
+                                text: "Installments"
                             }
                         }
 
                         Rectangle {
                             Layout.preferredWidth: 38
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -125,14 +144,15 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
                                 text: "Balance"
                             }
                         }
 
                         Rectangle {
-                            Layout.preferredWidth: 59
+                            Layout.preferredWidth: 60
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -141,15 +161,16 @@ Component {
                                 width: parent.width
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                elide: Text.ElideRight
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
-                                text: "Total Install"
+                                text: "Total Installments"
                             }
                         }
 
                         Rectangle {
                             Layout.preferredWidth: 90
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -159,14 +180,15 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
                                 text: "Last payment date"
                             }
                         }
 
                         Rectangle {
-                            Layout.preferredWidth: 68
+                            Layout.preferredWidth: 72
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -176,14 +198,15 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
                                 text: "Next due date"
                             }
                         }
 
                         Rectangle {
-                            Layout.preferredWidth: 100
+                            Layout.preferredWidth: 88
+                            Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
                             visible: true
@@ -193,10 +216,15 @@ Component {
                                 height: parent.height
                                 verticalAlignment: Text.AlignVCenter
                                 elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semilight"
+                                font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
-                                text: "Duration of Payment"
+                                text: "Payment Duration"
                             }
+                        }
+
+
+                        Component.onCompleted: {
+                            print(lay.width, lay.implicitWidth)
                         }
 
                     }
