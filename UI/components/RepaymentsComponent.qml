@@ -102,7 +102,7 @@ Component {
                             Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
-                            //visible: false
+                            visible: false
 
                             Text {
                                 width: parent.width

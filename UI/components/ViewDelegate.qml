@@ -18,7 +18,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: name_cont.visible
 
                 Text {
                     width: parent.width
@@ -34,7 +34,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: acc_id_cont.visible
 
                 Text {
                     width: parent.width
@@ -50,7 +50,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: inst_cont.visible
 
                 Text {
                     width: parent.width
@@ -66,7 +66,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: bal_cont.visible
 
                 Text {
                     width: parent.width
@@ -82,7 +82,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: t_inst_cont.visible
 
                 Text {
                     width: parent.width
@@ -98,7 +98,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: l_pays_cont.visible
 
                 Text {
                     width: parent.width
@@ -114,7 +114,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: due_cont.visible
 
                 Text {
                     width: parent.width
@@ -130,7 +130,7 @@ Component {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 color: "transparent"
-                visible: true
+                visible: dura_cont.visible
 
                 Text {
                     width: parent.width
