@@ -1,0 +1,20 @@
+Repayments
+============
+FULL DB
+------------
+name
+account id
+installments
+balance
+total_installments
+last payment date
+Next due date
+duration of payment
+
+VIEW
+------------
+name
+installments
+balance
+total_installments
+last payment date
