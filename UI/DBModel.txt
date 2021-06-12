@@ -18,3 +18,14 @@ installments
 balance
 total_installments
 last payment date
+
+FIELD
+--------
+staff_name_day_mont_year as file_name
+
+account no.
+name
+deposite
+installment
+withdrawal
+total
