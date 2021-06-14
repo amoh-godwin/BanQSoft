@@ -145,10 +145,11 @@ ApplicationWindow {
 
         StackView {
             anchors.fill: parent
-            initialItem: repayComp
+            initialItem: collectComp
         }
 
         Comp.RepaymentsComponent {id: repayComp}
+        Comp.CollectionsComponent {id: collectComp}
 
 
     }
