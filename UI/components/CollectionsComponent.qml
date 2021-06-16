@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import '../customs' as Cust
 
 Component {
 
@@ -12,7 +13,7 @@ Component {
             Layout.fillWidth: true
             Layout.preferredHeight: 52
 
-            Row {
+            RowLayout {
                 anchors {
                     fill: parent
                     margins: 36
@@ -23,6 +24,14 @@ Component {
                 SearchComponent {
                     width: 400
                     height: 26
+                }
+
+                Cust.CustButton {
+                    Layout.alignment: Qt.AlignRight
+                    text: "Add"
+
+                    onClicked: pop.open()
+
                 }
 
             }
@@ -78,6 +87,25 @@ Component {
                         spacing: 16
 
                         Rectangle {
+                            id: acc_id_cont
+                            Layout.preferredWidth: 53
+                            Layout.fillWidth: true
+                            Layout.fillHeight: true
+                            color: "transparent"
+                            visible: true
+
+                            Text {
+                                width: parent.width
+                                height: parent.height
+                                verticalAlignment: Text.AlignVCenter
+                                elide: Text.ElideMiddle
+                                font.family: "Segoe UI Semibold"
+                                renderType: Text.NativeRendering
+                                text: "Account No."
+                            }
+                        }
+
+                        Rectangle {
                             id: name_cont
                             Layout.preferredWidth: 100
                             Layout.fillWidth: true
@@ -97,12 +125,12 @@ Component {
                         }
 
                         Rectangle {
-                            id: acc_id_cont
-                            Layout.preferredWidth: 53
+                            id: deposit_cont
+                            Layout.preferredWidth: 38
                             Layout.fillWidth: true
                             Layout.fillHeight: true
                             color: "transparent"
-                            visible: false
+                            visible: true
 
                             Text {
                                 width: parent.width
@@ -111,7 +139,7 @@ Component {
                                 elide: Text.ElideMiddle
                                 font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
-                                text: "Account ID"
+                                text: "Deposit"
                             }
                         }
 
@@ -135,26 +163,7 @@ Component {
                         }
 
                         Rectangle {
-                            id: bal_cont
-                            Layout.preferredWidth: 38
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            color: "transparent"
-                            visible: true
-
-                            Text {
-                                width: parent.width
-                                height: parent.height
-                                verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semibold"
-                                renderType: Text.NativeRendering
-                                text: "Balance"
-                            }
-                        }
-
-                        Rectangle {
-                            id: t_inst_cont
+                            id: withdraw_cont
                             Layout.preferredWidth: 60
                             Layout.fillWidth: true
                             Layout.fillHeight: true
@@ -168,7 +177,7 @@ Component {
                                 elide: Text.ElideRight
                                 font.family: "Segoe UI Semibold"
                                 renderType: Text.NativeRendering
-                                text: "Total Installments"
+                                text: "Withdrawals"
                             }
                         }
 
@@ -191,43 +200,6 @@ Component {
                             }
                         }
 
-                        Rectangle {
-                            id: due_cont
-                            Layout.preferredWidth: 72
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            color: "transparent"
-                            visible: true
-
-                            Text {
-                                width: parent.width
-                                height: parent.height
-                                verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semibold"
-                                renderType: Text.NativeRendering
-                                text: "Next due date"
-                            }
-                        }
-
-                        Rectangle {
-                            id: dura_cont
-                            Layout.preferredWidth: 88
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            color: "transparent"
-                            visible: true
-
-                            Text {
-                                width: parent.width
-                                height: parent.height
-                                verticalAlignment: Text.AlignVCenter
-                                elide: Text.ElideMiddle
-                                font.family: "Segoe UI Semibold"
-                                renderType: Text.NativeRendering
-                                text: "Payment Duration"
-                            }
-                        }
 
                     }
 
@@ -241,8 +213,8 @@ Component {
                     ListView {
                         anchors.fill: parent
                         anchors.rightMargin: 24
-                        model: RepaymentsBaseModel {}
-                        delegate: ViewDelegate {}
+                        model: CollectionsBaseModel {}
+                        delegate: CollectionsDelegate {}
                     }
 
                 }
