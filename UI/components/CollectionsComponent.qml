@@ -221,6 +221,23 @@ Component {
 
             }
 
+
+            Popup {
+                id: pop
+                anchors.centerIn: parent
+                width: parent.width - 128
+                height: parent.height - 128
+                visible: true
+                padding: 0
+                //modal: true
+
+                Rectangle {
+                    anchors.fill: parent
+                    color: "dodgerblue"
+                }
+
+            }
+
         }
 
     }
