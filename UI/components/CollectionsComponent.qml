@@ -229,7 +229,9 @@ Component {
                 height: parent.height - 128
                 visible: true
                 padding: 0
-                //modal: true
+                focus: true
+                closePolicy: Popup.CloseOnEscape
+                modal: true
 
                 Rectangle {
                     anchors.fill: parent
