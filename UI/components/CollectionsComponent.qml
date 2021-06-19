@@ -238,9 +238,70 @@ Component {
                     //
                 }
 
-                Rectangle {
+                ColumnLayout {
                     anchors.fill: parent
-                    color: "dodgerblue"
+                    anchors.margins: 12
+                    spacing: 24
+
+                    Text {
+                        text: "Add new Entry"
+                        font.pixelSize: 20
+                        Layout.bottomMargin: 16
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 28
+                        spacing: 12
+
+                        Text {
+                            text: 'Account no.'
+                        }
+
+                        Cust.CustTextField {
+                            Layout.fillWidth: true
+                            Layout.alignment: Qt.AlignRight
+                        }
+
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 28
+                        spacing: 12
+
+                        Text {
+                            text: 'Name'
+                        }
+
+                        Cust.CustTextField {
+                            Layout.fillWidth: true
+                            Layout.alignment: Qt.AlignRight
+                        }
+
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 28
+                        spacing: 12
+
+                        Text {
+                            text: 'Deposit'
+                        }
+
+                        Cust.CustTextField {
+                            Layout.fillWidth: true
+                            Layout.alignment: Qt.AlignRight
+                        }
+
+                    }
+
+                    Rectangle {
+                        Layout.fillHeight: true
+                        color: "transparent"
+                    }
+
                 }
 
             }
