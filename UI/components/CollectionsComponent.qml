@@ -232,6 +232,11 @@ Component {
                 focus: true
                 closePolicy: Popup.CloseOnEscape
                 modal: true
+                z: 2
+
+                background: Rectangle {
+                    //
+                }
 
                 Rectangle {
                     anchors.fill: parent
