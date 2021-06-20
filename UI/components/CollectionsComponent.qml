@@ -249,18 +249,19 @@ Component {
                         Layout.bottomMargin: 16
                     }
 
+
                     RowLayout {
                         Layout.fillWidth: true
                         Layout.preferredHeight: 28
                         spacing: 12
 
                         Text {
+                            Layout.preferredWidth: 128
                             text: 'Account no.'
                         }
 
                         Cust.CustTextField {
                             Layout.fillWidth: true
-                            Layout.alignment: Qt.AlignRight
                         }
 
                     }
@@ -271,12 +272,12 @@ Component {
                         spacing: 12
 
                         Text {
+                            Layout.preferredWidth: 128
                             text: 'Name'
                         }
 
                         Cust.CustTextField {
                             Layout.fillWidth: true
-                            Layout.alignment: Qt.AlignRight
                         }
 
                     }
@@ -287,20 +288,79 @@ Component {
                         spacing: 12
 
                         Text {
+                            Layout.preferredWidth: 128
                             text: 'Deposit'
                         }
 
                         Cust.CustTextField {
                             Layout.fillWidth: true
-                            Layout.alignment: Qt.AlignRight
                         }
 
                     }
 
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 28
+                        spacing: 12
+
+                        Text {
+                            Layout.preferredWidth: 128
+                            text: 'Installments'
+                        }
+
+                        Cust.CustTextField {
+                            Layout.fillWidth: true
+                        }
+
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 28
+                        spacing: 12
+
+                        Text {
+                            Layout.preferredWidth: 128
+                            text: 'Withdrawal'
+                        }
+
+                        Cust.CustTextField {
+                            Layout.fillWidth: true
+                        }
+
+                    }
+
+
                     Rectangle {
                         Layout.fillHeight: true
                         color: "transparent"
+
+
                     }
+
+                    RowLayout {
+                        Layout.alignment: Qt.AlignRight
+                        Layout.preferredHeight: 36
+
+                        Cust.CustButton {
+                            text: "Save and Add new"
+                        }
+
+                        Cust.CustButton {
+                            text: "Save and Exit"
+                            color: "gold"
+                        }
+
+                        Cust.CustButton {
+                            text: "Cancel"
+                            color: "tomato"
+
+                            onClicked: pop.close()
+
+                        }
+
+                    }
+
 
                 }
 

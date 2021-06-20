@@ -9,7 +9,7 @@ TextField {
     background: Rectangle {
         border.color: ctrl.activeFocus ? "dodgerblue" : "darkgrey"
         radius: 8
-        implicitHeight: 28
+        implicitHeight: 32
     }
 
 }
