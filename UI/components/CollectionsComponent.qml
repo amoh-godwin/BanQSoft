@@ -276,7 +276,7 @@ Component {
                             text: 'Name'
                         }
 
-                        Cust.CustTextField {
+                        Cust.CustCombo {
                             Layout.fillWidth: true
                         }
 
