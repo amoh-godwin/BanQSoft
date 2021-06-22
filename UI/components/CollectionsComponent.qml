@@ -278,6 +278,8 @@ Component {
 
                         Cust.CustCombo {
                             Layout.fillWidth: true
+                            model: collections_names
+
                         }
 
                     }
