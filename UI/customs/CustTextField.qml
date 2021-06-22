@@ -7,8 +7,7 @@ TextField {
     selectByMouse: true
 
     background: Rectangle {
-        border.color: ctrl.activeFocus ? "dodgerblue" : "darkgrey"
-        radius: 8
+        border.color: ctrl.activeFocus ? "dodgerblue" : "lightgrey"
         implicitHeight: 32
     }
 
