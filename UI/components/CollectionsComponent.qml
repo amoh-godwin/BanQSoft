@@ -56,7 +56,7 @@ Component {
                 spacing: 8
 
                 Text {
-                    text: "Repayments"
+                    text: "Daily Collections | Ampofo"
                     font.pixelSize: 24
                     Layout.rightMargin: 24
                     color: accent
@@ -278,6 +278,7 @@ Component {
 
                         Cust.CustCombo {
                             Layout.fillWidth: true
+                            Layout.preferredHeight: 32
                             model: collections_names
 
                         }
