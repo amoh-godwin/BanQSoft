@@ -16,7 +16,7 @@ def create_daily_table(acc_number, date):
     conn.commit()
     conn.close()
 
-acc_number = '001223448'
+acc_number = '0000001'
 date = '30-6-2021'
 
 create_daily_table(acc_number, date)
