@@ -12,6 +12,7 @@ ApplicationWindow {
 
     property string currsSideNav: "Dashboard"
     property color accent: "#5F755F"
+    property var collections_names: []
 
     header: Rectangle {
         width: parent.width
@@ -145,10 +146,11 @@ ApplicationWindow {
 
         StackView {
             anchors.fill: parent
-            initialItem: repayComp
+            initialItem: collectComp
         }
 
         Comp.RepaymentsComponent {id: repayComp}
+        Comp.CollectionsComponent {id: collectComp}
 
 
     }
