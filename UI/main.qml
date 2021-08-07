@@ -162,6 +162,7 @@ ApplicationWindow {
 
         function onReturnNames(name_list, nums) {
             collections_names = name_list
+            print(name_list)
         }
 
     }

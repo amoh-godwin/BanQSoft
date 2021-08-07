@@ -11,18 +11,20 @@ class Backend(QObject):
 
     returnNames = pyqtSignal(list, list, arguments=['returnRes'])
 
-    @pyqtSlot()
-    def get_names(self):
-        g_thread = threading.Thread(target=self._get_names)
+    @pyqtSlot(str)
+    def get_names(self, patt):
+        g_thread = threading.Thread(target=self._get_names, args=[patt])
         g_thread.daemon = True
         g_thread.start()
 
-    def _get_names(self):
+    def _get_names(self, patt):
 
         conn = sqlite3.connect('clients.db')
         cursor = conn.cursor()
 
-        sql = "SELECT no, name FROM clients"
+        cond = f"'%{patt}%'"
+
+        sql = "SELECT no, name FROM clients WHERE name LIKE " + cond
         cursor.execute(sql)
         db = cursor.fetchall()
 
