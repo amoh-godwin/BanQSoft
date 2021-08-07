@@ -14,6 +14,31 @@ class Backend(QObject):
     returnNames = pyqtSignal(list, arguments=['returnRes'])
 
 
+    def name_exists(self, name):
+        conn = sqlite3.connect('clients.db')
+        cursor = conn.cursor()
+
+        sql = "SELECT no FROM clients WHERE no = ?"
+        cursor.execute(sql, name)
+        db = cursor.fetchall()
+
+        conn.commit()
+        conn.close()
+
+        if db:
+            return True
+
+    def add_record(self, name, num):
+        conn = sqlite3.connect('clients.db')
+        cursor = conn.cursor()
+
+        sql = "INSERT INTO clients VALUES (?, ?, ?)"
+        cursor.execute(sql, (name, num, 0))
+
+        conn.commit()
+        conn.close()
+
+
     @pyqtSlot(str)
     def get_names(self, patt):
         g_thread = threading.Thread(target=self._get_names, args=[patt])
@@ -58,6 +83,8 @@ class Backend(QObject):
 
     def _save_and_exit(self, num, name, deposit, installments, withdrawal):
         print(num, name)
+        if not self.name_exists(name):
+            self.add_record(name, num)
 
 
     @pyqtSlot(str, str, str, str, str)
