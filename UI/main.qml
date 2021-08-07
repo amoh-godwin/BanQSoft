@@ -12,7 +12,8 @@ ApplicationWindow {
 
     property string currsSideNav: "Dashboard"
     property color accent: "#5F755F"
-    property var collections_names: []
+    property var collections_names: ['abc', 'bcd', 'cde']
+    property QtObject backend
 
     header: Rectangle {
         width: parent.width
@@ -152,6 +153,16 @@ ApplicationWindow {
         Comp.RepaymentsComponent {id: repayComp}
         Comp.CollectionsComponent {id: collectComp}
 
+
+    }
+
+
+    Connections {
+        target: backend
+
+        function onReturnNames(name_list, nums) {
+            collections_names = name_list
+        }
 
     }
 

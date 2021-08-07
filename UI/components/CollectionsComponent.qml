@@ -227,12 +227,16 @@ Component {
                 anchors.centerIn: parent
                 width: parent.width - 128
                 height: parent.height - 128
-                visible: true
+                visible: false
                 padding: 0
                 focus: true
                 closePolicy: Popup.CloseOnEscape
                 modal: true
                 z: 2
+
+                onOpened: {
+                    backend.get_names()
+                }
 
                 background: Rectangle {
                     //
@@ -267,6 +271,7 @@ Component {
                     }
 
                     RowLayout {
+                        id: combo_cont
                         Layout.fillWidth: true
                         Layout.preferredHeight: 28
                         spacing: 12
@@ -276,10 +281,18 @@ Component {
                             text: 'Name'
                         }
 
-                        Cust.CustCombo {
+                        Cust.CustTextField {
+                            id: cust_combo
                             Layout.fillWidth: true
                             Layout.preferredHeight: 32
-                            model: collections_names
+                            //model: collections_names
+
+                            onTextChanged: {
+                                console.log('change')
+                                combo_pop.visible = true
+                                combo_pop.changed(this.text)
+                            }
+
 
                         }
 
@@ -365,6 +378,30 @@ Component {
                     }
 
 
+                }
+
+                Rectangle {
+                    id: combo_pop
+                    width: cust_combo.width
+                    height: 200
+                    visible: false
+                    //modal: false
+                    color: "dodgerblue"
+                    z: 120
+                    x: cust_combo.x + 12
+                    y: combo_cont.y + cust_combo.height + 12
+
+                    signal changed(string u_text)
+                    signal accepted()
+
+                    Text {
+                        text: cust_combo.height
+                        color: "white"
+                    }
+
+                    onChanged: {
+                        console.log('awesome')
+                    }
                 }
 
             }
