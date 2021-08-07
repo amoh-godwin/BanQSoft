@@ -384,6 +384,7 @@ Component {
                     width: cust_combo.width
                     height: 200
                     visible: false
+                    padding: 1
                     //modal: false
                     //color: "dodgerblue"
                     z: 120
@@ -397,7 +398,7 @@ Component {
                         width: parent.width
                         height: parent.height
                         model: ListModel { ListElement {name: ''; num: 0}}
-                        delegate: Text {text: name}
+                        delegate: Cust.CustModelDelegate {}
                         clip: true
 
                         Component.onCompleted: combo_lview = this
