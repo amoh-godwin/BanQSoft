@@ -309,6 +309,7 @@ Component {
                         }
 
                         Cust.CustTextField {
+                            id: cust_deposit
                             Layout.fillWidth: true
                         }
 
@@ -325,6 +326,7 @@ Component {
                         }
 
                         Cust.CustTextField {
+                            id: cust_installments
                             Layout.fillWidth: true
                         }
 
@@ -341,6 +343,7 @@ Component {
                         }
 
                         Cust.CustTextField {
+                            id: cust_withdrawal
                             Layout.fillWidth: true
                         }
 
@@ -360,11 +363,33 @@ Component {
 
                         Cust.CustButton {
                             text: "Save and Add new"
+
+                            onClicked: {
+                                backend.save_and_add(
+                                            cust_num.text,
+                                            cust_combo.text,
+                                            cust_deposit,
+                                            cust_installments,
+                                            cust_withdrawal
+                                            )
+                            }
+
                         }
 
                         Cust.CustButton {
                             text: "Save and Exit"
                             color: "gold"
+
+                            onClicked: {
+                                backend.save_and_exit(
+                                            cust_num.text,
+                                            cust_combo.text,
+                                            cust_deposit,
+                                            cust_installments,
+                                            cust_withdrawal
+                                            )
+                            }
+
                         }
 
                         Cust.CustButton {
