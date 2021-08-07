@@ -399,7 +399,7 @@ Component {
                     }
 
                     onChanged: {
-                        backend.get_names()
+                        backend.get_names(u_text)
                     }
 
                     onAccepted: {
