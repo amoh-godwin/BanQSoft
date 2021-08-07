@@ -234,10 +234,6 @@ Component {
                 modal: true
                 z: 2
 
-                onOpened: {
-                    backend.get_names()
-                }
-
                 background: Rectangle {
                     //
                 }
@@ -403,8 +399,9 @@ Component {
                     }
 
                     onChanged: {
-                        console.log('awesome')
+                        backend.get_names()
                     }
+
                     onAccepted: {
                         this.visible = false
                         console.log(0)
