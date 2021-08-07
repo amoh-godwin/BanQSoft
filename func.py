@@ -9,7 +9,7 @@ class Backend(QObject):
     def __init__(self):
         super().__init__()
 
-    returnNames = pyqtSignal(list, list, arguments=['returnRes'])
+    returnNames = pyqtSignal(list, arguments=['returnRes'])
 
     @pyqtSlot(str)
     def get_names(self, patt):
@@ -32,7 +32,6 @@ class Backend(QObject):
         conn.close()
 
         names = []
-        nums = []
 
         for item in db:
             obj = {}
@@ -40,9 +39,8 @@ class Backend(QObject):
             obj['name'] = item[1]
             names.append(obj)
 
-        self.returnRes(names, nums)
+        self.returnRes(names)
 
 
-    def returnRes(self, names, nums):
-        print(self.returnNames)
-        self.returnNames.emit(names, nums)
+    def returnRes(self, names):
+        self.returnNames.emit(names)

@@ -162,10 +162,9 @@ ApplicationWindow {
     Connections {
         target: backend
 
-        function onReturnNames(name_list, nums) {
+        function onReturnNames(name_list) {
             combo_lview.model.clear()
             combo_lview.model.append(name_list)
-            collections_nums = nums
         }
 
     }
