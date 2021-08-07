@@ -288,9 +288,12 @@ Component {
                             //model: collections_names
 
                             onTextChanged: {
-                                console.log('change')
                                 combo_pop.visible = true
                                 combo_pop.changed(this.text)
+                            }
+
+                            onEditingFinished: {
+                                combo_pop.accepted()
                             }
 
 
@@ -380,13 +383,13 @@ Component {
 
                 }
 
-                Rectangle {
+                Popup {
                     id: combo_pop
                     width: cust_combo.width
                     height: 200
                     visible: false
                     //modal: false
-                    color: "dodgerblue"
+                    //color: "dodgerblue"
                     z: 120
                     x: cust_combo.x + 12
                     y: combo_cont.y + cust_combo.height + 12
@@ -401,6 +404,10 @@ Component {
 
                     onChanged: {
                         console.log('awesome')
+                    }
+                    onAccepted: {
+                        this.visible = false
+                        console.log(0)
                     }
                 }
 
