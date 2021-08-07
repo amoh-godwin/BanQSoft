@@ -13,6 +13,18 @@ Component {
             anchors.verticalCenter: parent.verticalCenter
             text: name
             font.pixelSize: 13
+            font.family: "Segoe UI Semilight"
+        }
+
+
+        MouseArea {
+            anchors.fill: parent
+
+            onPressed: {
+                combo_lview.currentIndex = index
+                combo_pop.accepted()
+            }
+
         }
 
     }

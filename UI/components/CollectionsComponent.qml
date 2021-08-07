@@ -261,6 +261,7 @@ Component {
                         }
 
                         Cust.CustTextField {
+                            id: cust_num
                             Layout.fillWidth: true
                         }
 
@@ -399,6 +400,7 @@ Component {
                         height: parent.height
                         model: ListModel { ListElement {name: ''; num: 0}}
                         delegate: Cust.CustModelDelegate {}
+                        focus: true
                         clip: true
 
                         Component.onCompleted: combo_lview = this
@@ -409,8 +411,10 @@ Component {
                     }
 
                     onAccepted: {
+                        var obj = combo_lview.model.get(combo_lview.currentIndex)
+                        cust_combo.text = obj.name
+                        cust_num.text = obj.num
                         this.visible = false
-                        console.log(0)
                     }
                 }
 
