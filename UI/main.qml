@@ -12,7 +12,9 @@ ApplicationWindow {
 
     property string currsSideNav: "Dashboard"
     property color accent: "#5F755F"
-    property var collections_names: ['abc', 'bcd', 'cde']
+    property var collections_names: []
+    property QtObject combo_lview
+    property var collections_nums: []
     property QtObject backend
 
     header: Rectangle {
@@ -161,8 +163,9 @@ ApplicationWindow {
         target: backend
 
         function onReturnNames(name_list, nums) {
-            collections_names = name_list
-            print(name_list)
+            combo_lview.model.clear()
+            combo_lview.model.append(name_list)
+            collections_nums = nums
         }
 
     }

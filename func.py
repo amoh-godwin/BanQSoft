@@ -35,8 +35,10 @@ class Backend(QObject):
         nums = []
 
         for item in db:
-            nums.append(item[0])
-            names.append(item[1])
+            obj = {}
+            obj['num'] = item[0]
+            obj['name'] = item[1]
+            names.append(obj)
 
         self.returnRes(names, nums)
 

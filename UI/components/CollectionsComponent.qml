@@ -393,9 +393,14 @@ Component {
                     signal changed(string u_text)
                     signal accepted()
 
-                    Text {
-                        text: cust_combo.height
-                        color: "white"
+                    contentItem: ListView {
+                        width: parent.width
+                        height: parent.height
+                        model: ListModel { ListElement {name: ''; num: 0}}
+                        delegate: Text {text: name}
+                        clip: true
+
+                        Component.onCompleted: combo_lview = this
                     }
 
                     onChanged: {
