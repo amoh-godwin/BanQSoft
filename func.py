@@ -4,12 +4,15 @@ import sqlite3
 
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtSignal
 
+
 class Backend(QObject):
 
     def __init__(self):
         super().__init__()
 
+
     returnNames = pyqtSignal(list, arguments=['returnRes'])
+
 
     @pyqtSlot(str)
     def get_names(self, patt):
@@ -44,3 +47,26 @@ class Backend(QObject):
 
     def returnRes(self, names):
         self.returnNames.emit(names)
+
+
+    @pyqtSlot(str, str, str, str, str)
+    def save_and_exit(self, *args):
+        se_thread = threading.Thread(target=self._save_and_exit, args=[*args])
+        se_thread.daemon = True
+        se_thread.start()
+
+
+    def _save_and_exit(self, num, name, deposit, installments, withdrawal):
+        print(num, name)
+
+
+    @pyqtSlot(str, str, str, str, str)
+    def save_and_add(self, *args):
+        se_thread = threading.Thread(target=self._save_and_add, args=[*args])
+        se_thread.daemon = True
+        se_thread.start()
+
+
+    def _save_and_add(self, num, name, deposit, installments, withdrawal):
+        print(num, name)
+
