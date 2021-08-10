@@ -382,6 +382,8 @@ Component {
 
                             onClicked: {
                                 backend.save_and_exit(
+                                            'Ampofo',
+                                            '8-7-2021',
                                             cust_num.text,
                                             cust_combo.text,
                                             cust_deposit,
